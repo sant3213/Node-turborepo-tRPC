@@ -1,0 +1,23 @@
+{
+  "name": "car-dealer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "turbo build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "turbo": "^1.10.12"
+  },
+  "nodemonConfig": {
+    "ignore": ["**/*.test.js", "**/*.spec.js", "dist/"],
+    "delay": "2000"
+  },
+  "workspaces": [
+    "apps/*"
+  ]
+}
