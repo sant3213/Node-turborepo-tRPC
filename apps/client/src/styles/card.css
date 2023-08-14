@@ -1,0 +1,60 @@
+.grid-card-unit-container {
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 
+    [content-start] 1fr
+    [left-side] 1px
+    [right-content] 15%
+    [content-end];
+    grid-template-rows: 70% repeat(4, 1fr); 
+}
+
+.grid-card-unit-container .item p {
+    margin: 0; /* Reset the margin */
+    padding: 0; /* Reset any padding if needed */
+}
+
+.item {
+    font-size: small;
+    color: black;
+    padding: 0px 4px;
+}
+
+.grid-img {
+    grid-row: 1 / 2;
+    grid-column: content-start / content-end;
+}
+
+.grid-brand {
+    grid-row: 2 / 3;
+    grid-column: content-start / left-side;
+}
+
+.grid-line {
+    grid-row: 3 / 4;
+    grid-column: content-start / left-side;
+}
+
+.grid-price {
+    grid-row: 3 / 4;
+    grid-column: right-content / content-end;
+}
+
+.grid-metadata {
+    grid-row: 4 / 5;
+    grid-column: content-start / left-side;
+}
+
+.grid-combustion-type {
+    grid-row: 5 / 6;
+    grid-column: content-start / left-side;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
